@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page apotik</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, nav, section, footer { padding: 20px; margin: 10px; }
+        header { background: #FFA500; color: white; text-align: center; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+        .slider, .slider img { width: 100%; height: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #FFA500; color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di Apotik kimia Farma</h1>
+    <p>Promo dan layanan terbaik hanya untuk Anda!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Profil Usaha</a></li>
+        <li><a href="#pricing">Harga</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="#developer">Profil Pengembang</a></li>
+    </ul>
+</nav>
+<section class="slider">
+    <img src="Img/Poto apotek1.jpg" alt="Gambar 1">
+    <img src="Img/Poto apotek2.jpg" alt="Gambar 2">
+</section>
+<section id="about">
+    <h2>Profil Usaha</h2>
+    <img src="Img/Poto obat1.jpg" alt="Gambar Profil Usaha" style="width: 50%; max-width: 300px;">
+    <p>Apotek Kimia Farma adalah mitra kesehatan terpercaya yang menyediakan produk kesehatan berkualitas tinggi, mulai dari obat-obatan, alat kesehatan, hingga layanan konsultasi medis. Kami berkomitmen untuk mendukung kesehatan masyarakat dengan pelayanan terbaik.</p>
+</section>
+<section id="pricing">
+    <h2>Harga Layanan & Produk</h2>
+    <table>
+        <tr>
+            <th>Produk/Layanan</th>
+            <th>Deskripsi</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>Biolacta</td>
+            <td>Memdukung penyembuhan dan pemulihan</td>
+            <td>Rp100.000</td>
+        </tr>
+        <tr>
+            <td>Blackmores fish oil</td>
+            <td>suplemen lengkap untuk mendukung imun </td>
+            <td>Rp200.000</td>
+        </tr>
+    </table>
+</section>
+<section id="contact">
+    <h2>Pesan Sekarang</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Pesanan:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+<section id="login">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</section>
+<section id="social">
+    <h2>Ikuti Kami di Media Sosial</h2>
+    <p>
+        <a href="https://Facebook.com">Facebook</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://twitter.com">Twitter</a>
+    </p>
+</section>
+<section id="developer">
+    <h2>Profil Pengembang</h2>
+    <p>Nama Pengembang: Jane Muhamad rozi</p>
+    <p>Deskripsi Pengembang:Muhamad Rozi adalah seorang mahasisa STTNF yang berusaha mencari pengalam di bidang web developer.</p>
+</section>
+<footer>
+    <p>&copy; 2024 Usaha Kami. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
